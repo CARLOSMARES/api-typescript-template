@@ -1,28 +1,25 @@
 {
-  "name": "api-typescript-template",
+  "name": "server",
   "version": "1.0.0",
-  "description": "API echa en TypeScript",
-  "main": "src/server.ts",
+  "main": "build/index.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
-    "build": "rm -rf build/ && prettier --write src/ && tsc"
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "API",
-    "Template",
-    "TypeScript"
-  ],
-  "author": "Carlos Mares Dev",
-  "license": "GPL-3.0-or-later",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/express": "^4.17.21",
-    "@types/morgan": "^1.9.9",
-    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.0.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
   }
 }
